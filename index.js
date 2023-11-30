@@ -8,8 +8,21 @@ function newImage(url, left, bottom) {
     return object
 }
 
+function newItem(url, left, bottom){
+    let object = newImage(url, left, bottom)
+
+
+sword.addEventListener('click', function(){
+    sword.remove()
+})
+}
+
+
 newImage('assets/green-character.gif', 100, 100)
 newImage('assets/tree.png', 200, 300)
 newImage('assets/pillar.png', 350, 100)
 newImage('assets/crate.png', 150, 200)
 newImage('assets/well.png', 500, 425)
+
+
+newItem('assets/sword.png', 500, 405)
